@@ -21,7 +21,7 @@ public class linearSearchBinarySearchSorting {
                 return airports[i];
             }
         }
-        return null;
+        return null; 
     }
     static Airport[] sortAirports(Airport[] airports){
         // Airport[] temp = new Airport[airports.length];
