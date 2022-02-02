@@ -92,5 +92,5 @@ int main(int argc,char * argv[]){
     int j = 0;
     for (int num : arr){
         std::cout << ++j  << ") "<< num << std::endl;
-    }
+    } 
 }
