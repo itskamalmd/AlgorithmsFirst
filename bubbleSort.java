@@ -1,12 +1,17 @@
 public class bubbleSort {
-    //i dont know the actual name of this algorithm 
+    // swap function 
+    public static void swap(int[] arr,int index1,int index2){
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+    }
+
+    //bubble sorting 
     public static int[] bubbleSortNums (int[] nums) {
-        for (int i = 0; i < nums.length; i++){
-            for(int j= 0; j < i; j++){
-                if (nums [i] < nums [j]){
-                    int temp = nums[i];
-                    nums[i] = nums[j]; 
-                    nums[j] = temp;
+        for (int i = 0; i < nums.length; i ++){
+            for (int j = 0; j < nums.length-1; j++){
+                if (nums[i] < nums[j]){
+                    swap(nums,i,j);
                 }
             }
         }
